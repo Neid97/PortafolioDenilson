@@ -19,15 +19,9 @@ body {
     gap: 90px 0;
 
     background-color: var(--color-bg);
-<<<<<<< HEAD
-    background-image: url(/assets/images/black-linen.png);
-    background-position: center;
-    background-size: contain;
-=======
     background-image: url(/assets/images/fake-brick.png);
     background-repeat: repeat;
     background-size: auto;
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
 }
 
 .nav{
@@ -35,10 +29,7 @@ body {
 }
 
 .header {
-<<<<<<< HEAD
-=======
     
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
     grid-area: header;
 }
 
