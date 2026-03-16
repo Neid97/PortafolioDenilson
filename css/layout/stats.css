@@ -24,10 +24,7 @@
     position: relative;
     display: flex;
     flex-direction: column;    
-<<<<<<< HEAD
-=======
     grid-column: 2/3;
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
 }
 .stats__card::before {
     content: "";
@@ -133,8 +130,6 @@
     text-transform: uppercase;
 }
 
-<<<<<<< HEAD
-=======
 
 @media (max-width: 768px){
     .stats__fondo-animado {
@@ -145,4 +140,3 @@
     transform: translateY(60px);
 }
 }
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
