@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Denilson.dev</title>
+    <!-- ?icon -->
+    <link
+      rel="shortcut icon"
+      href="assets/icons/logoD.ico"
+      type="image/x-icon"
+    />
+
+    <!-- ?Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Genos:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- *Base -->
+    <link rel="stylesheet" href="css/base/normalize.css" />
+    <link rel="stylesheet" href="css/base/variables.css" />
+    <link rel="stylesheet" href="css/base/typography.css" />
+
+    <!-- *Utilidades -->
+    <link rel="stylesheet" href="css/utilities/animations.css" />
+
+    <!-- *Layout -->
+    <link rel="stylesheet" href="css/layout/layout.css" />
+    <link rel="stylesheet" href="css/layout/nav.css" />
+    <link rel="stylesheet" href="css/layout/hero.css" />
+    <link rel="stylesheet" href="css/layout/stats.css" />
+    <link rel="stylesheet" href="css/layout/cards.css" />
+    <link rel="stylesheet" href="css/layout/footer.css" />
+  </head>
+
+  <body>
+    <!-- * nav ___________________________________________________________________________________________________ -->
+    <nav class="nav">
+      <div class="nav__content">
+        <div class="nav__logo">
+          <a href="#" class="nav__logo-link">
+            <img
+              class="nav__logo-img"
+              src="./assets/images/logoD.png"
+              alt="Denilson Logo"
+            />
+          </a>
+        </div>
+
+        <div class="nav__links" id="navLinks">
+          <a href="" class="nav__link">
+            <span class="nav__link-texto">Sobre mí</span>
+          </a>
+          <a href="" class="nav__link">
+            <span class="nav__link-texto">Habilidades</span>
+          </a>
+          <a href="" class="nav__link">
+            <span class="nav__link-texto">Proyectos</span>
+          </a>
+        </div>
+
+        <!-- Este queda siempre visible, fuera del menú -->
+        <a href="#" class="nav__link link-animation-inverse">
+          <span
+            class="nav__link-texto link-animation__text-inverse"
+            data-text="Contacto"
+            >contacto</span
+          >
+        </a>
+
+        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+          <svg
+            class="nav__toggle-open"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="0" y1="8" x2="24" y2="8" />
+            <line x1="0" y1="16" x2="24" y2="16" />
+          </svg>
+          <svg
+            class="nav__toggle-close"
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <line x1="4" y1="4" x2="20" y2="20" />
+            <line x1="20" y1="4" x2="4" y2="20" />
+          </svg>
+        </button>
+      </div>
+    </nav>
+
+    <!-- * Header ___________________________________________________________________________________________________ -->
+    <header class="header">
+      <section class="hero">
+        <h1 class="hero__titulo">
+          <span class="hero__titulo-text">Denilson</span>
+        </h1>
+        <h2 class="hero__sub-titulo">Frontend Developer en formación</h2>
+        <p class="hero__parrafo">
+          Construyo interfaces web modernas, claras y funcionales.
+        </p>
+      </section>
+
+      <section class="hero__links">
+        <a href="#" class="hero__link link-animation">
+          <span
+            class="hero__link-texto link-animation__text"
+            data-text="Contactame"
+            >contactame</span
+          >
+        </a>
+        <a href="#" class="hero__link link-animation-inverse">
+          <span
+            class="hero__link-texto link-animation__text-inverse"
+            data-text="Proyectos"
+            >proyectos</span
+          >
+        </a>
+      </section>
+    </header>
+
+    <!-- * Main ___________________________________________________________________________________________________ -->
+    <main class="main">
+      <section class="stats">
+        <div class="stats__fondo-animado">
+          <div class="stats__item"></div>
+        </div>
+        <div class="stats__proyectos stats__card">
+          <span class="stats__numero">3</span>
+          <span class="stats__titulo">Proyectos terminados</span>
+        </div>
+
+        <div class="stats__tiempo-aprendizaje stats__card">
+          <span class="stats__numero">6</span>
+          <span class="stats__titulo">Meses aprendiendo</span>
+        </div>
+
+        <div class="stats__tecnologias stats__card">
+          <span class="stats__numero">3+</span>
+          <span class="stats__titulo">Tecnologías</span>
+        </div>
+      </section>
+
+      <section class="habilidades">
+        <div class="habilidades__titulo">
+          <span class="habilidades__titulo--text">Tecnologías</span>
+        </div>
+        <div class="cards-habilidades">
+          <div class="habilidades__card">
+            <span class="card-habilidades__titulo">HTML5</span>
+            <img src="./assets/images/Html5.svg" alt="" class="habilidades__img">
+          </div>
+          <div class="habilidades__card">
+            <span class="card-habilidades__titulo">CSS3</span>
+            <img src="./assets/images/Css3.svg" alt="" class="habilidades__img">
+          </div>
+          <div class="habilidades__card">
+            <span class="card-habilidades__titulo">Responsive</span>
+            <img src="./assets/images/Responsive.svg" alt="" class="habilidades__img">
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- * Footer ___________________________________________________________________________________________________ -->
+    <footer class="footer">
+      <span class="footer__item"></span>
+      <span class="footer__item"></span>
+    </footer>
+
+    <!-- * script ___________________________________________________________________________________________________ -->
+    <script>
+      const navToggle = document.getElementById("navToggle");
+      const navLinks = document.getElementById("navLinks");
+
+      navToggle.addEventListener("click", () => {
+        navLinks.classList.toggle("is-open");
+        navToggle.classList.toggle("is-open");
+        document.body.classList.toggle("no-scroll");
+      });
+      navLinks.addEventListener("click", (e) => {
+        if (e.target === navLinks) {
+          navLinks.classList.remove("is-open");
+          navToggle.classList.remove("is-open");
+          document.body.classList.remove("no-scroll");
+        }
+      });
+    </script>
+  </body>
+</html>
