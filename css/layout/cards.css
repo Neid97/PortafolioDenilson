@@ -1,22 +1,4 @@
 .habilidades{
-<<<<<<< HEAD
-    width: 100%;
-    height: auto;
-}
-.cards-habilidades{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-}
-.habilidades__titulo{
-    width: 100%;
-    height: 40px;
-    display: flex;
-    align-items: center;
-
-    padding: 0 1rem;
-}
-
-=======
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -27,29 +9,12 @@
     display: flex;
     align-items: center;
 }
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
 .habilidades__titulo--text{
     font-size: 25px;
     font-family: var(--font-main-2);
     color: var(--color-text-muted);
 }
 
-<<<<<<< HEAD
-.habilidades__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.card-habilidades__titulo {
-    font-size: x-large;
-}
-.habilidades__img{
-    width: 50%;
-    height: auto;
-    object-fit: contain;
-    aspect-ratio: 1/1;
-}   
-=======
 
 .habilidades__cards{
     
@@ -88,4 +53,3 @@
 .habilidades__card-description {
     margin: 0;
 }
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
