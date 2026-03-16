@@ -1,0 +1,58 @@
+body {
+    position: relative;
+    display: grid;
+    grid-template-columns: 
+    minmax(1rem, 1fr)
+    minmax(350px, 1200px)
+    minmax(1rem, 1fr);
+    grid-template-rows:
+    50px
+    auto
+    minmax(auto, 1fr)
+    40px;
+    grid-template-areas:
+        "nav    nav       nav"
+        ".      header      ."
+        ".      main        ."
+        "footer footer footer"
+    ;
+    gap: 90px 0;
+
+    background-color: var(--color-bg);
+<<<<<<< HEAD
+    background-image: url(/assets/images/black-linen.png);
+    background-position: center;
+    background-size: contain;
+=======
+    background-image: url(/assets/images/fake-brick.png);
+    background-repeat: repeat;
+    background-size: auto;
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+}
+
+.nav{
+    grid-area: nav;
+}
+
+.header {
+<<<<<<< HEAD
+=======
+    
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+    grid-area: header;
+}
+
+.main {
+    grid-area: main;
+
+
+    display: flex;
+    flex-direction: column;
+    gap: 90px;
+
+    height: auto;
+}
+
+.footer {
+    grid-area: footer;
+}

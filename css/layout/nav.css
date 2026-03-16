@@ -1,0 +1,165 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+body.no-scroll {
+  overflow: hidden;
+}
+
+.nav {
+    position: sticky;
+    z-index: 100;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 1rem;
+
+
+<<<<<<< HEAD
+    background-color: var(--color-bg);
+    background-image: url(/assets/images/black-linen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+=======
+    /* background-color: var(--color-bg);
+    background-image: url(/assets/images/black-linen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover; */
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+
+}
+.nav::after{
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+
+    width: 100%;
+    height: 1px;
+
+    background: var(--color-border);
+}
+<<<<<<< HEAD
+=======
+.nav::before{
+    content: "";
+    display: block;
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    backdrop-filter: blur(10px);
+}
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+.nav__content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: clamp(250px, 100%, 1200px);
+    gap: 0 1rem;
+}
+.nav__logo {
+    cursor: default;
+    flex: 1;
+}
+
+.nav__logo-link{
+    display: flex;    
+    height: fit-content;
+    width: fit-content;
+}
+.nav__logo-img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+
+
+
+/* !boton nav desplegable */
+/* Desktop — todo normal */
+.nav__toggle {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    z-index: 300;
+    display: none;
+}
+
+.nav__toggle-open,
+.nav__toggle-close {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s, transform 0.2s;
+}
+
+.nav__toggle-close {
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.nav__toggle.is-open .nav__toggle-open {
+    opacity: 0;
+    transform: rotate(45deg);
+}
+
+.nav__toggle.is-open .nav__toggle-close {
+    opacity: 1;
+    transform: rotate(0deg);
+}
+
+@media (max-width: 768px) {
+    .nav__toggle {
+        display: block;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: var(--color-text);
+    }
+
+    .nav__links {
+        position: fixed;
+        inset: 0;
+        z-index: 200;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        opacity: 0;
+        pointer-events: none;
+
+<<<<<<< HEAD
+        background-image: url(/assets/images/black-linen.png);
+=======
+        background-image: url(/assets/images/fake-brick.png);
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+        background-color: var(--color-bg);
+
+        transition: opacity 0.3s ease;
+    }
+
+    .nav__links.is-open {
+        z-index: 200;
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    /* Contacto y logo siempre visibles, encima del menú */
+    .nav__logo-link,
+    .link-animation-inverse {
+        z-index: 300;
+        position: relative;
+    }
+<<<<<<< HEAD
+}
+=======
+}
+
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)

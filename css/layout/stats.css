@@ -1,0 +1,148 @@
+/* !elemento padre stats
+ ? se define grid padding y gap separacion del espacio dentro del padre*/
+.stats {
+    /* outline: 2px solid green; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+    padding: 1rem 0;
+
+    cursor: default;
+
+}
+
+
+
+
+
+
+/* !elemento hijo stats
+? se estilizan las cards que contienen un titulop y texto */
+.stats__card {
+    max-width: 230px;
+    position: relative;
+    display: flex;
+    flex-direction: column;    
+<<<<<<< HEAD
+=======
+    grid-column: 2/3;
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+}
+.stats__card::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: -10px;
+    width: 2px;
+    height: 100%;
+
+    background: var(--color-accent-soft);
+
+    transform-origin: center;
+    transform: scaley(.5);
+    transition: all 0.4s ease-in-out;
+}
+.stats__card::after{
+    content: "";
+    position: absolute;
+    display: block;
+    inset: 0;
+    z-index: -1;
+    width: 100%;    
+    height: 100%;
+
+    background: linear-gradient(90deg,var(--color-primary-light), transparent);
+    filter: blur(10px);
+
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 0px;
+
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center;
+    transition: all 0.2s ease-in;
+}
+.stats__card:nth-child(2)::after{
+     border-top-right-radius: 0px;
+    border-bottom-right-radius: 200px;
+}
+.stats__card:nth-child(3)::after{
+     border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+
+
+
+
+.stats__card:hover::before{
+    transform: scaley(1);
+}
+.stats__card:hover::after{
+    opacity: 1;
+    transform: scaleY(1);
+}
+
+
+
+
+/* !fondo animado (forma abstracta)
+? se estiliza la forma abstracta de fondo en el area, se define que ocupe una columna y las tres filas
+? z index en -2 para que este detras de todos los elementos anteriores
+*tambien se define el espacio que ocupara en clamp para que no se rompa si existiera una pantalla mucho mas grande */
+.stats__fondo-animado {
+    grid-column: span 1;
+    grid-row: span 3;
+
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    z-index: -2;
+
+}
+.stats__item{
+    width: clamp(230px, 30%, 90%);
+    height: 90%;
+    /* 30-80 */
+    background: linear-gradient(135deg, var(--color-primary), rgb(85, 50, 120));
+
+    border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
+
+    box-shadow:
+        0 0 40px rgba(106, 59, 210, .35),
+        0 0 90px rgba(106, 59, 210, .25),
+        0 0 160px rgba(106, 59, 210, .15);
+
+    animation: blobShape 12s ease-in-out infinite,
+        float 16s ease-in-out infinite;
+
+    /* filter: blur(10px); */
+}
+
+
+/* ? elementos dentro de las cards
+!"se estilizan solamente el font size de numero y color y transformacion del titulo */
+.stats__numero {
+    font-size: 25px;
+}
+
+.stats__titulo {
+    color: var(--color-text-muted);
+    text-transform: uppercase;
+}
+
+<<<<<<< HEAD
+=======
+
+@media (max-width: 768px){
+    .stats__fondo-animado {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+.stats__item{
+    transform: translateY(60px);
+}
+}
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)

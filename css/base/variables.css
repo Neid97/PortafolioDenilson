@@ -1,0 +1,173 @@
+:root {
+
+   /* Tipografía */
+  --font-main: "Inter", sans-serif;
+  --font-main-2: "Genos", sans-serif;
+  /* Tamaños base */
+<<<<<<< HEAD
+  --font-size-base: 12px;
+=======
+  --font-size-base: 14px;
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+  --font-size-base-links: 12px;
+
+
+
+  /* background */
+  --color-bg: rgb(16, 16, 16);
+  /* surfaces */
+  --color-surface-1: rgb(24, 24, 28);
+  --color-surface-2: rgb(32, 32, 38);
+  /* primary */
+  --color-primary: rgb(50, 23, 77);
+  --color-primary-light: rgb(85, 50, 120);
+  /* accents */
+  --color-accent: rgb(198, 178, 255);
+  --color-accent-soft: rgb(226, 216, 255);
+  /* text */
+  --color-text: rgb(235, 235, 245);
+  --color-text-muted: rgb(160, 160, 175);
+  /* borders */
+  --color-border: rgb(60, 60, 75);
+  /* states */
+  --color-success: rgb(120, 210, 170);
+  --color-warning: rgb(240, 200, 120);
+  --color-danger: rgb(230, 120, 120);
+}
+
+
+
+
+/* estilos link--animation*/
+.link-animation{
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 1em;
+  height: 30px;
+  
+  text-decoration: none;
+  color: var(--color-text);
+  text-transform: uppercase;
+
+  background: var(--color-primary);
+
+}
+
+
+.link-animation__text{
+  position: relative;
+  z-index: 0;
+}
+
+.link-animation::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  background: var(--color-accent-soft);
+
+}
+.link-animation__text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+
+  color: var(--color-surface-2);
+
+  transform: translateY(45px);
+}
+
+/* transiciones de todos los elementos */
+.link-animation__text, .link-animation__text::after, .link-animation, .link-animation::before{
+  transition: all 0.4s ease-in-out;
+}
+
+/* hover de todos los elementos */
+.link-animation:hover .link-animation__text{
+  transform: translateY(-45px);
+
+}
+.link-animation:hover .link-animation__text::after{
+  transform: translateY(45px);
+}
+.link-animation:hover::before{
+  opacity: 1;
+}
+
+/* !inverse------------------------------------------------------------------------------------- */
+/* estilos link--animation*/
+.link-animation-inverse{
+  position: relative;
+  overflow: hidden;
+
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 1em;
+  height: 30px;
+  
+  text-decoration: none;
+  color: var(--color-text);
+  text-transform: uppercase;
+
+background: rgb(16,16,16);
+}
+
+
+.link-animation__text-inverse{
+  position: relative;
+}
+
+.link-animation-inverse::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  background: var(--color-primary);
+
+}
+.link-animation__text-inverse::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+
+  color: var(--color-text);
+
+  transform: translateY(45px);
+}
+
+/* transiciones de todos los elementos */
+.link-animation__text-inverse, .link-animation__text-inverse::after, .link-animation-inverse, .link-animation-inverse::before{
+  transition: all 0.4s ease-in-out;
+}
+
+/* hover de todos los elementos */
+.link-animation-inverse:hover .link-animation__text-inverse{
+  transform: translateY(-45px);
+
+}
+.link-animation-inverse:hover .link-animation__text-inverse::after{
+  transform: translateY(45px);
+}
+.link-animation-inverse:hover::before{
+  opacity: 1;
+}
+
+
+
+/* 
+[ nav                    ]
+[ hero                   ]
+[ stats                  ]
+[ cards de habilidades   ]
+[ footer                 ] */

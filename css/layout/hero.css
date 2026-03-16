@@ -1,0 +1,35 @@
+.header {
+    position: relative;
+    z-index: 1;
+<<<<<<< HEAD
+    overflow: hidden;
+=======
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+<<<<<<< HEAD
+
+=======
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+    gap: 1rem 0;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero__titulo,
+.hero__sub-titulo {
+    margin: 0;
+}
+
+.hero__link {
+    max-width: fit-content;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+}

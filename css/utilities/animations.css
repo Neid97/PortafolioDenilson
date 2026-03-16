@@ -1,0 +1,28 @@
+@keyframes blobShape{
+  0%{
+    border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
+  }
+  33%{
+    border-radius: 60% 40% 55% 45% / 60% 45% 55% 40%;
+  }
+  66%{
+    border-radius: 50% 50% 65% 35% / 50% 60% 40% 50%;
+  }
+  100%{
+    border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
+  }
+}
+
+@keyframes float{
+  0%,100%{
+<<<<<<< HEAD
+    transform: translateY(0) translateX(0);
+=======
+    transform: translateY(60px) translateX(0);
+>>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
+  }
+  50%{
+    transform: translateY(-30px) translateX(15px);
+  }
+}
+
