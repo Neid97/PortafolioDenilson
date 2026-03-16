@@ -15,14 +15,9 @@
 
 @keyframes float{
   0%,100%{
-<<<<<<< HEAD
-    transform: translateY(0) translateX(0);
-=======
     transform: translateY(60px) translateX(0);
->>>>>>> 5ecb725 (Se agrega la carpeta -> css/)
   }
   50%{
     transform: translateY(-30px) translateX(15px);
   }
 }
-
