@@ -24,24 +24,20 @@
     display: flex;
     gap: 1rem;
 }
-
 .habilidades__card-header {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 120px;
 }
-
-.habilidades__card-titulo {
-    font-family: var(--font-main-2);
-}
-
 .habilidades__card-icon {
     width: clamp(100px, 15%, 400px);
     height: auto;
     object-fit: contain;
     aspect-ratio: 1/1;
 }
+
+
 
 .habilidades__card-body {
     flex: 1;
@@ -51,7 +47,9 @@
 }
 
 .habilidades__card-titulo {
+    font-family: var(--font-main-2);
     color: var(--color-text-muted);
+
 }
 
 .habilidades__card-description {
