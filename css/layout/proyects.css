@@ -90,3 +90,8 @@
 
     background-color: var(--color-danger);
 }
+
+
+.proyects__card-link{
+    font-size: var(--font-size-base);
+}
