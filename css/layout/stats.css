@@ -10,21 +10,21 @@
 
     cursor: default;
 
+    
 }
-
-
-
 
 
 
 /* !elemento hijo stats
 ? se estilizan las cards que contienen un titulop y texto */
 .stats__card {
-    max-width: 230px;
+    width: clamp(190px, 60%, 500px);
     position: relative;
     display: flex;
     flex-direction: column;    
     grid-column: 2/3;
+    
+
 }
 .stats__card::before {
     content: "";
@@ -52,22 +52,15 @@
     background: linear-gradient(90deg,var(--color-primary-light), transparent);
     filter: blur(10px);
 
-    border-top-right-radius: 200px;
-    border-bottom-right-radius: 0px;
+    border-radius: 10px;
 
     opacity: 0;
     transform: scaleY(0);
     transform-origin: center;
     transition: all 0.2s ease-in;
+
 }
-.stats__card:nth-child(2)::after{
-     border-top-right-radius: 0px;
-    border-bottom-right-radius: 200px;
-}
-.stats__card:nth-child(3)::after{
-     border-top-right-radius: 200px;
-    border-bottom-right-radius: 200px;
-}
+
 
 
 
@@ -97,11 +90,9 @@
     align-items: center;
     z-index: -2;
 
-    border: 2px solid green;
 
 }
 .stats__item{
-    /* width: 230px; */
     width: clamp(230px, 50%, 500px);
 
     aspect-ratio: 1/1;
@@ -130,4 +121,6 @@
 .stats__titulo {
     color: var(--color-text-muted);
     text-transform: uppercase;
+    overflow-wrap: break-word;
 }
+

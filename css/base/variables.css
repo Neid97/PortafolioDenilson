@@ -115,7 +115,7 @@
   color: var(--color-text);
   text-transform: uppercase;
 
-background: rgb(16,16,16);
+background: var(--color-surface-2);
 }
 
 

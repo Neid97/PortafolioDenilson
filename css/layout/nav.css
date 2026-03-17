@@ -65,6 +65,24 @@ body.no-scroll {
     object-fit: cover;
 }
 
+.nav__links {
+    display: flex;
+    gap: 1rem;
+}
+.nav__link {
+    display: inline-flex;
+    width: 70px;
+    height: 25px;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+    text-shadow: 0 0 2px var(--color-accent);
+}
+
+
 
 
 
@@ -123,7 +141,6 @@ body.no-scroll {
         opacity: 0;
         pointer-events: none;
 
-        background-image: url(/assets/images/fake-brick.png);
         background-color: var(--color-bg);
 
         transition: opacity 0.3s ease;

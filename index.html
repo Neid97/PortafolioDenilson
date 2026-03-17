@@ -32,7 +32,8 @@
     <link rel="stylesheet" href="css/layout/nav.css" />
     <link rel="stylesheet" href="css/layout/hero.css" />
     <link rel="stylesheet" href="css/layout/stats.css" />
-    <link rel="stylesheet" href="css/layout/cards.css" />
+    <link rel="stylesheet" href="css/layout/skills.css" />
+    <link rel="stylesheet" href="css/layout/proyects.css" />
     <link rel="stylesheet" href="css/layout/footer.css" />
   </head>
 
@@ -63,9 +64,9 @@
         </div>
 
         <!-- Este queda siempre visible, fuera del menú -->
-        <a href="#" class="nav__link link-animation-inverse">
+        <a href="#" class="link-animation-inverse">
           <span
-            class="nav__link-texto link-animation__text-inverse"
+            class="link-animation__text-inverse"
             data-text="Contacto"
             >contacto</span
           >
@@ -104,7 +105,7 @@
       </div>
     </nav>
 
-    <!-- * Header ___________________________________________________________________________________________________ -->
+    <!-- * hero ___________________________________________________________________________________________________ -->
     <header class="header">
       <section class="hero">
         <h1 class="hero__titulo">
@@ -136,7 +137,7 @@
 
     <!-- * Main ___________________________________________________________________________________________________ -->
     <main class="main">
-    <!--  Main stats ___________________________________________________________________________________________________ -->
+      <!--  stats ___________________________________________________________________________________________________ -->
 
       <section class="stats">
         <div class="stats__fondo-animado">
@@ -144,7 +145,7 @@
         </div>
         <div class="stats__proyectos stats__card">
           <span class="stats__numero">3</span>
-          <span class="stats__titulo">Proyectos terminados</span>
+          <span class="stats__titulo">Proyectos</span>
         </div>
 
         <div class="stats__tiempo-aprendizaje stats__card">
@@ -158,7 +159,7 @@
         </div>
       </section>
 
-    <!-- * Main Habilidades ___________________________________________________________________________________________________ -->
+      <!-- * skills  ___________________________________________________________________________________________________ -->
 
       <section class="habilidades">
         <div class="habilidades__titulo">
@@ -169,15 +170,16 @@
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
-              src="./assets/images/Html5.svg"
-              alt=""
-              class="habilidades__card-icon"
+                src="./assets/images/Html5.svg"
+                alt=""
+                class="habilidades__card-icon"
               />
             </div>
             <div class="habilidades__card-body">
               <span class="habilidades__card-titulo">HTML5</span>
               <p class="habilidades__card-description">
-                Estructuración semántica de contenido para páginas web accesibles.
+                Estructuración semántica de contenido para páginas web
+                accesibles.
               </p>
             </div>
           </div>
@@ -187,14 +189,17 @@
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
-              src="./assets/images/Css3.svg"
-              alt=""
-              class="habilidades__card-icon"
+                src="./assets/images/Css3.svg"
+                alt=""
+                class="habilidades__card-icon"
               />
             </div>
             <div class="habilidades__card-body">
               <span class="habilidades__card-titulo">CSS3</span>
-              <p class="habilidades__card-description">Diseño de interfaces modernas con layouts flexibles y responsive.</p>
+              <p class="habilidades__card-description">
+                Diseño de interfaces modernas con layouts flexibles y
+                responsive.
+              </p>
             </div>
           </div>
         </div>
@@ -203,14 +208,17 @@
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
-              src="./assets/images/Git.svg"
-              alt=""
-              class="habilidades__card-icon"
+                src="./assets/images/Git.svg"
+                alt=""
+                class="habilidades__card-icon"
               />
             </div>
             <div class="habilidades__card-body">
               <span class="habilidades__card-titulo">Git</span>
-              <p class="habilidades__card-description">Control de versiones para gestionar cambios y colaborar en proyectos.</p>
+              <p class="habilidades__card-description">
+                Control de versiones para gestionar cambios y colaborar en
+                proyectos.
+              </p>
             </div>
           </div>
         </div>
@@ -219,14 +227,105 @@
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
-              src="./assets/images/Responsive.svg"
-              alt=""
-              class="habilidades__card-icon"
+                src="./assets/images/Responsive.svg"
+                alt=""
+                class="habilidades__card-icon"
               />
             </div>
             <div class="habilidades__card-body">
               <span class="habilidades__card-titulo">Responsive</span>
-              <p class="habilidades__card-description">Adaptación de interfaces para distintos tamaños de pantalla.</p>
+              <p class="habilidades__card-description">
+                Adaptación de interfaces para distintos tamaños de pantalla.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- * proyects ___________________________________________________________________________________________________ -->
+      <section class="proyectos">
+        <div class="proyects__titulo separador">
+          <span class="proyects__titulo--text">Proyectos</span>
+        </div>
+
+        <div class="proyects__cards">
+          <div class="proyects__card">
+            <div class="proyects__card-header">
+              <img
+                src="./assets/images/flex-page1.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+              <img
+                src="./assets/images/flex-page2.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+              <img
+                src="./assets/images/flex-page3.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+            </div>
+            <div class="proyects__card-body">
+              <a href="#">
+                <p class="proyects__card-description">
+                  Landing page totalmente responsive desarrollada únicamente con
+                  Flexbox, enfocada en una estructura limpia y adaptable a
+                  diferentes dispositivos.
+                </p>
+                <span class="proyects__card-titulo"
+                  >Landing Page Responsive</span
+                >
+              </a>
+
+              <div class="proyects__card-skills">
+                <span class="proyect__card-skill">html5</span>
+                <span class="proyect__card-skill">css3</span>
+                <span class="proyect__card-skill">flexbox</span>
+                <span class="proyect__card-skill">github</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="proyects__card">
+            <div class="proyects__card-header">
+              <img
+                src="./assets/images/porta-page3.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+              <img
+                src="./assets/images/porta-page1.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+              <img
+                src="./assets/images/porta-page2.png"
+                alt=""
+                class="proyects__card-icon"
+              />
+            </div>
+            <div class="proyects__card-body">
+              <a href="#">
+                <p class="proyects__card-description">
+                  Sitio web personal diseñado para mostrar proyectos,
+                  habilidades y el desarrollo como frontend, con enfoque en
+                  diseño responsive y experiencia de usuario.
+                </p>
+                <span class="proyects__card-titulo"
+                  >Portafolio Web Personal</span
+                >
+              </a>
+
+              <div class="proyects__card-skills">
+                <span class="proyect__card-skill">html5</span>
+                <span class="proyect__card-skill">css3</span>
+                <span class="proyect__card-skill">flexbox</span>
+                <span class="proyect__card-skill">grid</span>
+                <span class="proyect__card-skill">git</span>
+                <span class="proyect__card-skill">github</span>
+              </div>
             </div>
           </div>
         </div>
