@@ -100,8 +100,8 @@
 
 }
 .stats__item{
-    width: clamp(230px, 30%, 90%);
-    height: 90%;
+    max-width: 230px;
+    max-height: 210px;
     aspect-ratio: 1/1;
     transform: translateY(60px);
 
