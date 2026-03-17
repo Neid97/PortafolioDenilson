@@ -104,7 +104,6 @@
     max-height: 210px;
     aspect-ratio: 1/1;
 
-
     background: linear-gradient(135deg, var(--color-primary), rgb(85, 50, 120));
 
     border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
