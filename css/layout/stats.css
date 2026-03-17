@@ -91,8 +91,6 @@
 .stats__fondo-animado {
     grid-column: span 1;
     grid-row: span 3;
-    aspect-ratio: 1/1;
-
 
     display: flex;
     justify-content: center;
@@ -104,7 +102,10 @@
 .stats__item{
     width: clamp(230px, 30%, 90%);
     height: 90%;
-    /* 30-80 */
+    aspect-ratio: 1/1;
+    transform: translateY(60px);
+
+
     background: linear-gradient(135deg, var(--color-primary), rgb(85, 50, 120));
 
     border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
@@ -117,7 +118,6 @@
     animation: blobShape 12s ease-in-out infinite,
         float 16s ease-in-out infinite;
 
-    /* filter: blur(10px); */
 }
 
 
@@ -130,15 +130,4 @@
 .stats__titulo {
     color: var(--color-text-muted);
     text-transform: uppercase;
-}
-
-
-@media (max-width: 768px){
-    .stats__fondo-animado {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-.stats__item{
-    transform: translateY(60px);
-}
 }
