@@ -91,6 +91,8 @@
 .stats__fondo-animado {
     grid-column: span 1;
     grid-row: span 3;
+    aspect-ratio: 1/1;
+
 
     display: flex;
     justify-content: center;
