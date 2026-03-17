@@ -34,6 +34,7 @@
     <link rel="stylesheet" href="css/layout/stats.css" />
     <link rel="stylesheet" href="css/layout/skills.css" />
     <link rel="stylesheet" href="css/layout/proyects.css" />
+    <link rel="stylesheet" href="css/layout/contact.css" />
     <link rel="stylesheet" href="css/layout/footer.css" />
   </head>
 
@@ -52,23 +53,21 @@
         </div>
 
         <div class="nav__links" id="navLinks">
-          <a href="" class="nav__link">
+          <a href="#hero" class="nav__link">
             <span class="nav__link-texto">Sobre mí</span>
           </a>
-          <a href="" class="nav__link">
+          <a href="#tecnologias" class="nav__link">
             <span class="nav__link-texto">Habilidades</span>
           </a>
-          <a href="" class="nav__link">
+          <a href="#proyectos" class="nav__link">
             <span class="nav__link-texto">Proyectos</span>
           </a>
         </div>
 
         <!-- Este queda siempre visible, fuera del menú -->
         <a href="#" class="link-animation-inverse">
-          <span
-            class="link-animation__text-inverse"
-            data-text="Contacto"
-            >contacto</span
+          <span class="link-animation__text-inverse" data-text="Contactame"
+            >contactame</span
           >
         </a>
 
@@ -106,7 +105,7 @@
     </nav>
 
     <!-- * hero ___________________________________________________________________________________________________ -->
-    <header class="header">
+    <header class="header" id="hero">
       <section class="hero">
         <h1 class="hero__titulo">
           <span class="hero__titulo-text">Denilson</span>
@@ -161,7 +160,7 @@
 
       <!-- * skills  ___________________________________________________________________________________________________ -->
 
-      <section class="habilidades">
+      <section class="habilidades" id="tecnologias">
         <div class="habilidades__titulo">
           <span class="habilidades__titulo--text">Tecnologías</span>
         </div>
@@ -243,7 +242,7 @@
       </section>
 
       <!-- * proyects ___________________________________________________________________________________________________ -->
-      <section class="proyectos">
+      <section class="proyectos" id="proyectos">
         <div class="proyects__titulo separador">
           <span class="proyects__titulo--text">Proyectos</span>
         </div>
@@ -330,6 +329,11 @@
           </div>
         </div>
       </section>
+
+      <section class="contacto">
+        <div class="transparent"></div>
+        <div class="contacto__medias"></div>
+      </section>
     </main>
 
     <!-- * Footer ___________________________________________________________________________________________________ -->
@@ -348,8 +352,9 @@
         navToggle.classList.toggle("is-open");
         document.body.classList.toggle("no-scroll");
       });
+
       navLinks.addEventListener("click", (e) => {
-        if (e.target === navLinks) {
+        if (e.target.closest("a")) {
           navLinks.classList.remove("is-open");
           navToggle.classList.remove("is-open");
           document.body.classList.remove("no-scroll");

@@ -1,0 +1,11 @@
+.contacto {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+.transparent {
+    width: 100vw;
+    height: 400px;
+    background: transparent;
+}
+
