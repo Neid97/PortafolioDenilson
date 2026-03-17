@@ -38,6 +38,8 @@ body.no-scroll {
     position: absolute;
     inset: 0;
     z-index: -1;
+    background-color: var(--color-bg);
+    /* background-image: url(../../assets/images/fake-brick.png); */
     backdrop-filter: blur(10px);
 }
 .nav__content{
