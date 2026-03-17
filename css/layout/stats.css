@@ -100,10 +100,9 @@
 
 }
 .stats__item{
-    max-width: 230px;
+    width: 230px;
     max-height: 210px;
     aspect-ratio: 1/1;
-    transform: translateY(60px);
 
 
     background: linear-gradient(135deg, var(--color-primary), rgb(85, 50, 120));
