@@ -94,14 +94,14 @@
 
     display: flex;
     justify-content: center;
-    align-items: flex-end;
-
+    align-items: center;
     z-index: -2;
+
+    border: 2px solid green;
 
 }
 .stats__item{
     width: 230px;
-    max-height: 210px;
     aspect-ratio: 1/1;
 
     background: linear-gradient(135deg, var(--color-primary), rgb(85, 50, 120));
@@ -113,8 +113,8 @@
         0 0 90px rgba(106, 59, 210, .25),
         0 0 160px rgba(106, 59, 210, .15);
 
-    animation: blobShape 12s ease-in-out infinite,
-        float 16s ease-in-out infinite;
+    animation: blobShape 10s ease-in-out infinite,
+        float 30s ease-in-out infinite;
 
 }
 

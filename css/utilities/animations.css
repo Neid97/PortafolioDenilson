@@ -17,7 +17,11 @@
   0%,100%{
     transform: translateY(0px) translateX(0);
   }
-  50%{
+  30%{
     transform: translateY(-30px) translateX(15px);
+  }
+  60%{
+    transform: translateY(30px) translateX(-15px);
+
   }
 }
