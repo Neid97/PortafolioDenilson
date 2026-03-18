@@ -1,0 +1,133 @@
+/* estilos link--animation*/
+.link-animation{
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 1em;
+  height: 30px;
+  
+  text-decoration: none;
+  color: var(--color-text);
+  text-transform: uppercase;
+
+  background: var(--color-primary);
+
+}
+
+
+.link-animation__text{
+  position: relative;
+  z-index: 0;
+}
+
+.link-animation::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  background: var(--color-accent-soft);
+
+}
+.link-animation__text::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+
+  color: var(--color-surface-2);
+
+  transform: translateY(45px);
+}
+
+/* transiciones de todos los elementos */
+.link-animation__text, .link-animation__text::after, .link-animation, .link-animation::before{
+  transition: all 0.4s ease-in-out;
+}
+
+/* hover de todos los elementos */
+.link-animation:hover .link-animation__text{
+  transform: translateY(-45px);
+
+}
+.link-animation:hover .link-animation__text::after{
+  transform: translateY(45px);
+}
+.link-animation:hover::before{
+  opacity: 1;
+}
+
+/* !inverse------------------------------------------------------------------------------------- */
+/* estilos link--animation*/
+.link-animation-inverse{
+  position: relative;
+  overflow: hidden;
+
+
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: auto;
+  padding: 0 1em;
+  height: 30px;
+  
+  text-decoration: none;
+  color: var(--color-text);
+  text-transform: uppercase;
+
+background: var(--color-surface-2);
+}
+
+
+.link-animation__text-inverse{
+  position: relative;
+}
+
+.link-animation-inverse::before{
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  opacity: 0;
+  background: var(--color-primary);
+
+}
+.link-animation__text-inverse::after {
+  content: attr(data-text);
+  position: absolute;
+  inset: 0;
+
+  color: var(--color-text);
+
+  transform: translateY(45px);
+}
+
+/* transiciones de todos los elementos */
+.link-animation__text-inverse, .link-animation__text-inverse::after, .link-animation-inverse, .link-animation-inverse::before{
+  transition: all 0.4s ease-in-out;
+}
+
+/* hover de todos los elementos */
+.link-animation-inverse:hover .link-animation__text-inverse{
+  transform: translateY(-45px);
+
+}
+.link-animation-inverse:hover .link-animation__text-inverse::after{
+  transform: translateY(45px);
+}
+.link-animation-inverse:hover::before{
+  opacity: 1;
+}
+
+
+
+/* 
+[ nav                    ]
+[ hero                   ]
+[ stats                  ]
+[ cards de habilidades   ]
+[ footer                 ] */

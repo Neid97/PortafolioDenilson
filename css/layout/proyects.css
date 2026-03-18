@@ -66,9 +66,6 @@
     font-family: var(--font-main-2);
     color: var(--color-text-muted);
 }
-.proyects__card-description {
-    margin: 0;
-}
 
 
 .proyect__card-skill {
