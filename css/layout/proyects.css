@@ -1,4 +1,4 @@
-.proyectos {
+.proyects {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -8,7 +8,8 @@
     scroll-margin-top: 50px;
 
 }
-.proyects__cards{
+
+.proyects__cards {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -21,12 +22,13 @@
     gap: 1rem;
     flex-flow: row-reverse wrap;
     justify-content: center;
-    
+
     padding: 1rem;
 
     background-color: var(--color-surface-1);
     border: 2px solid var(--color-border);
 }
+
 /* *------------------------------------------------------------------------------------- */
 
 .proyects__card-header {
@@ -47,9 +49,17 @@
     animation: banner 9s ease-in-out infinite;
 }
 
-.proyects__card-icon:nth-child(1) { animation-delay: 0s; }
-.proyects__card-icon:nth-child(2) { animation-delay: 3s; }
-.proyects__card-icon:nth-child(3) { animation-delay: 6s; }
+.proyects__card-icon:nth-child(1) {
+    animation-delay: 0s;
+}
+
+.proyects__card-icon:nth-child(2) {
+    animation-delay: 3s;
+}
+
+.proyects__card-icon:nth-child(3) {
+    animation-delay: 6s;
+}
 
 /* *------------------------------------------------------------------------------------- */
 .proyects__card-body {
@@ -57,14 +67,24 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+
 }
-.proyects__card-link{
-    font-size: var(--font-size-base);
+
+.proyects__card-text--under {
+    display: inline-flex;
+    position: relative;
 }
-.proyects__card-titulo {
-    font-family: var(--font-main-2);
-    color: var(--color-text-muted);
+
+.proyects__card-text--under::after {
+    content: "";
+    position: absolute;
+    display: inline-flex;
+    bottom: 0;
+
+    height: 1px;
+    width: 100%;
+    background: var(--color-border);
+
 }
 
 
@@ -81,19 +101,20 @@
 
     background-color: var(--color-surface-2);
 }
-.proyect__card-skill::after{
+
+.proyect__card-skill::after {
     content: "";
     position: absolute;
     display: block;
     width: 5px;
     height: 5px;
     left: 3px;
-    
+
     border-radius: 50%;
     background-color: var(--color-danger);
 }
-.proyect__card-skill:nth-child(even)::after{
+
+.proyect__card-skill:nth-child(even)::after {
     background-color: var(--color-success);
 
 }
-

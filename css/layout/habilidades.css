@@ -19,12 +19,18 @@
 }
 
 
-
+.habilidades__cards{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;  
+}
 
 
 .habilidades__card {
     display: flex;
     gap: 1rem;
+    padding: 1rem;
+
 }
 
 .habilidades__card-header {

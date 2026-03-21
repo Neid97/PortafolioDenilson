@@ -13,12 +13,12 @@ body {
     50px
     auto
     minmax(auto, 1fr)
-    40px;
+    650px;
     grid-template-areas:
         "nav    nav       nav"
         ".      header      ."
         ".      main        ."
-        "footer footer footer"
+        ".      footer      ."
     ;
     gap: 90px 0;
 

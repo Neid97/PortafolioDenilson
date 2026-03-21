@@ -5,10 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Denilson.dev</title>
     <!-- ?icon -->
+    <link rel="icon" type="image/x-icon" href="assets/icons/favicon.ico" />
     <link
-      rel="shortcut icon"
-      href="assets/icons/logoD.ico"
-      type="image/x-icon"
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/icons/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/icons/favicon-16x16.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/icons/apple-touch-icon.png"
     />
 
     <!-- ?Fonts -->
@@ -47,7 +60,7 @@
           <a href="#" class="nav__logo-link">
             <img
               class="nav__logo-img"
-              src="./assets/images/logoD.png"
+              src="./assets/images/LogoD.svg"
               alt="Denilson Logo"
             />
           </a>
@@ -60,13 +73,13 @@
           <a href="#tecnologias" class="nav__link">
             <span class="nav__link-texto">Habilidades</span>
           </a>
-          <a href="#proyectos" class="nav__link">
+          <a href="#proyects" class="nav__link">
             <span class="nav__link-texto">Proyectos</span>
           </a>
         </div>
 
         <!-- Este queda siempre visible, fuera del menú -->
-        <a href="#" class="link-animation-inverse">
+        <a href="#contacto" class="link-animation-inverse">
           <span class="link-animation__text-inverse" data-text="Contactame"
             >contactame</span
           >
@@ -164,8 +177,10 @@
       <!-- * skills  ___________________________________________________________________________________________________ -->
 
       <section class="habilidades" id="tecnologias">
-        <div class="habilidades__titulo">
-          <span class="habilidades__titulo--text">Tecnologías</span>
+        <div class="habilidades__titulo separador">
+          <span class="habilidades__titulo--text separador-text"
+            >Tecnologías</span
+          >
         </div>
 
         <div class="habilidades__cards">
@@ -185,9 +200,7 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="habilidades__cards">
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
@@ -204,9 +217,7 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="habilidades__cards">
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
@@ -223,9 +234,7 @@
               </p>
             </div>
           </div>
-        </div>
 
-        <div class="habilidades__cards">
           <div class="habilidades__card">
             <div class="habilidades__card-header">
               <img
@@ -245,9 +254,9 @@
       </section>
 
       <!-- * proyects ___________________________________________________________________________________________________ -->
-      <section class="proyectos" id="proyectos">
+      <section class="proyects" id="proyects">
         <div class="proyects__titulo separador">
-          <span class="proyects__titulo--text">Proyectos</span>
+          <span class="proyects__titulo--text separador-text">Proyectos</span>
         </div>
 
         <div class="proyects__cards">
@@ -272,9 +281,10 @@
             <div class="proyects__card-body">
               <a href="#" class="proyects__card-link">
                 <p class="proyects__card-description">
-                  Landing page totalmente responsive desarrollada únicamente con
-                  Flexbox, enfocada en una estructura limpia y adaptable a
-                  diferentes dispositivos.
+                  <span class="proyects__card-text--under">Landing page</span>
+                  totalmente responsive desarrollada únicamente con Flexbox,
+                  enfocada en una estructura limpia y adaptable a diferentes
+                  dispositivos.
                 </p>
                 <span class="proyects__card-titulo"
                   >Landing Page Responsive</span
@@ -311,9 +321,12 @@
             <div class="proyects__card-body">
               <a href="#" class="proyects__card-link">
                 <p class="proyects__card-description">
-                  Sitio web personal diseñado para mostrar proyectos,
-                  habilidades y el desarrollo como frontend, con enfoque en
-                  diseño responsive y experiencia de usuario.
+                  <span class="proyects__card-text--under"
+                    >Sitio web personal</span
+                  >
+                  diseñado para mostrar proyectos, habilidades y el desarrollo
+                  como frontend, con enfoque en diseño responsive y experiencia
+                  de usuario.
                 </p>
                 <span class="proyects__card-titulo"
                   >Portafolio Web Personal</span
@@ -332,23 +345,74 @@
           </div>
         </div>
       </section>
-
-      <section class="contacto">
-        <div class="transparent"></div>
-        <div class="contacto__medias"></div>
-      </section>
     </main>
 
     <!-- * Footer ___________________________________________________________________________________________________ -->
-    <footer class="footer">
-      <span class="footer__item"></span>
-      <span class="footer__item"></span>
+
+    <footer class="footer" id="contacto">
+      <section class="contacto">
+        <div class="contacto__header">
+          <img
+            src="./assets/images/LogoD.svg"
+            alt="Logo Denilson"
+            class="contacto__img"
+          />
+          <h2>
+            ¿Tienes una idea en mente? Podemos trabajar en ella mientras sigo
+            aprendiendo.
+          </h2>
+          <div class="contacto__header-links">
+            <a
+              href="mailto:martinezdenilson90@gmail.com?subject=Quiero trabajar contigo&body=Hola, vi tu portafolio y..."
+              class="link-animation-inverse contacto__header-link"
+            >
+              <span
+                class="link-animation__text-inverse contact"
+                data-text="Contactame"
+                >contactame</span
+              >
+            </a>
+            <span class="contacto__header-email">aedenilson991@gmail.com</span>
+          </div>
+        </div>
+        <div class="contacto__body">
+          <div class="contacto__body-content">
+            <span class="contacto__body-text">contacto</span>
+            <a
+              href="https://wa.me/50251858337?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+              target="_blank"
+              class="contacto__body-quickContact"
+              >WhatsApp</a
+            >
+          </div>
+
+          <div class="contacto__body-content">
+            <span class="contacto__body-text">enlaces</span>
+            <a
+              href="https://github.com/Neid97"
+              target="_blank"
+              class="contacto__body-quickContact"
+              >GitHub</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <div class="footer__links">
+        <a href="" class="footer__link">
+          <span class="footer__text-copyright">© 2026 Denilson Martínez</span>
+        </a>
+        <a href="" class="footer__link">
+          <span class="footer__text-link"></span>
+        </a>
+      </div>
     </footer>
 
     <!-- * script ___________________________________________________________________________________________________ -->
     <script>
       const navToggle = document.getElementById("navToggle");
       const navLinks = document.getElementById("navLinks");
+      const navContacto = document.querySelector('a[href="#contacto"]');
 
       navToggle.addEventListener("click", () => {
         navLinks.classList.toggle("is-open");
@@ -362,6 +426,12 @@
           navToggle.classList.remove("is-open");
           document.body.classList.remove("no-scroll");
         }
+      });
+
+      navContacto.addEventListener("click", () => {
+        navLinks.classList.remove("is-open");
+        navToggle.classList.remove("is-open");
+        document.body.classList.remove("no-scroll");
       });
     </script>
   </body>

@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    scroll-margin-bottom: 0;
+}
+.footer__links{
+    display: flex;
+    align-items: center;
+    height: 30px;
+
+}
+.footer__text-copyright{
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base-links);
+}

@@ -1,11 +1,47 @@
-.contacto {
-    width: 100%;
-    height: auto;
-    position: relative;
-}
-.transparent {
-    width: 100vw;
-    height: 400px;
-    background: transparent;
+.contacto__img{
+    display: none;
 }
 
+.contacto{
+    flex: 1;
+    display: grid;
+    place-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+.contacto__header{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.contacto__header-links{
+    display: flex;
+    gap: 1rem;
+}
+.contacto__header-link{
+    width: fit-content;
+}
+.contacto__body{
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+}
+
+.contacto__body-content{
+    display: flex;
+    gap: 2rem;
+}
+
+.contacto__body-text{
+    text-transform: uppercase;
+    font-size: var(--font-size-base-links);
+    color: var(--color-text-muted);
+}
+.contacto__body-quickContact{
+    transition: text-shadow .3s ease, color .3s ease;
+}
+.contacto__body-quickContact:hover{
+    text-shadow: 0 0 10px var(--color-primary-light);
+    color: var(--color-accent-soft) ;
+}
