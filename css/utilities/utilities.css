@@ -4,5 +4,5 @@
     flex-direction: column;
     
     width: min(100%, 1260px);
-    padding-inline: clamp(1rem, 5vw + 1rem, 3rem);
+    padding-inline: clamp(1rem, 5vw, 3rem);
 }

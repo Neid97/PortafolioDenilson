@@ -1,28 +1,34 @@
-
 /* !Animacion del item de stats */
-@keyframes blobShape{
-  0%{
+@keyframes blobShape {
+  0% {
     border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
   }
-  33%{
+
+  33% {
     border-radius: 60% 40% 55% 45% / 60% 45% 55% 40%;
   }
-  66%{
+
+  66% {
     border-radius: 50% 50% 65% 35% / 50% 60% 40% 50%;
   }
-  100%{
+
+  100% {
     border-radius: 55% 45% 60% 40% / 55% 50% 50% 45%;
   }
 }
 
-@keyframes float{
-  0%,100%{
+@keyframes float {
+
+  0%,
+  100% {
     transform: translateY(0px) translateX(0);
   }
-  30%{
+
+  30% {
     transform: translateY(-30px) translateX(15px);
   }
-  60%{
+
+  60% {
     transform: translateY(30px) translateX(-15px);
 
   }
@@ -32,9 +38,74 @@
 /* !Animacion del banner de imagenes en la seccion de proyects */
 
 @keyframes banner {
-  0%   { opacity: 0; }
-  10%  { opacity: 1; }
-  33%  { opacity: 1; }
-  43%  { opacity: 0; }
-  100% { opacity: 0; }
+  0% {
+    opacity: 0;
+  }
+
+  10% {
+    opacity: 1;
+  }
+
+  33% {
+    opacity: 1;
+  }
+
+  43% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+
+/* !Animacion para el inicio */
+
+@keyframes starting {
+
+  0% {
+    transform: translateY(55px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* !Aplicamos la animacion a las partes que deseamos en css */
+
+.stats, .hero__footer, .hero__body, .habilidades__cards, .text-separador, .proyects__cards, .contacto {
+  opacity: 0;
+  animation-name: starting;
+  animation-duration: 0.6s;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+.stas{
+  animation-duration: 1s;
+}
+.hero__footer {
+  animation-delay: 200ms;
+}
+
+.hero__body{
+  animation-delay: 400ms;
+}
+.habilidades__cards{
+  animation-delay: 300ms;
+}
+
+.text-separador{
+  animation-delay: 100ms;
+}
+
+.proyects__cards{
+  animation-delay: 300ms;
+}
+
+.contacto{
+  animation-delay: 100ms;
 }
