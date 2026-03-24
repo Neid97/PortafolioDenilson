@@ -1,15 +1,10 @@
 /* !elemento padre stats
  ? se define grid padding y gap separacion del espacio dentro del padre*/
 .stats {
-    /* outline: 2px solid green; */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 65px);
     gap: 1rem;
-    padding: 1rem;
     cursor: default;
-
-    
 }
 
 
@@ -17,12 +12,13 @@
 /* !elemento hijo stats
 ? se estilizan las cards que contienen un titulop y texto */
 .stats__card {
-    width: clamp(190px, 60%, 500px);
+    grid-column: 2/3;
     position: relative;
+
     display: flex;
     flex-direction: column;   
     justify-content: center; 
-    grid-column: 2/3;
+    width: clamp(190px, 60%, 500px);
     
 
 }
@@ -55,8 +51,6 @@
     transform: scaleY(0);
     transform-origin: bottom;
     transition: transform 0.3s ease-in, visibility 0.6s ease-in-out;
-
-
 }
 
 
@@ -112,13 +106,11 @@
 
 /* ? elementos dentro de las cards
 !"se estilizan solamente el font size de numero y color y transformacion del titulo */
-.stats__numero {
-    font-size: 25px;
-}
 
 .stats__titulo {
     color: var(--color-text-muted);
     text-transform: uppercase;
-    overflow-wrap: break-word;
 }
+
+
 

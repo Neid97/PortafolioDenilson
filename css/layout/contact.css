@@ -3,11 +3,14 @@
 }
 
 .contacto{
-    flex: 1;
+    position: relative;
     display: grid;
     place-content: center;
     gap: 2rem;
     padding: 1rem;
+    z-index: 1;
+    height: 500px;
+
 }
 .contacto__header{
     display: flex;

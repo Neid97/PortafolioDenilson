@@ -80,10 +80,12 @@
 
     <!-- *Utilidades -->
     <link rel="stylesheet" href="css/utilities/animations.css" />
+    <link rel="stylesheet" href="css/utilities/components.css" />
+    <link rel="stylesheet" href="css/utilities/utilities.css" />
+
 
     <!-- *Layout -->
     <link rel="stylesheet" href="css/layout/layout.css" />
-    <link rel="stylesheet" href="css/layout/components.css" />
     <link rel="stylesheet" href="css/layout/nav.css" />
     <link rel="stylesheet" href="css/layout/hero.css" />
     <link rel="stylesheet" href="css/layout/stats.css" />
@@ -96,385 +98,367 @@
   <body>
     <!-- * nav ___________________________________________________________________________________________________ -->
     <nav class="nav">
-      <div class="nav__content">
-        <div class="nav__logo">
-          <a href="#" class="nav__logo-link">
-            <img
-              class="nav__logo-img"
-              src="./assets/images/LogoD.svg"
-              alt="Denilson Logo"
-            />
+      <div class="contenedor">
+        <div class="nav__content">
+          <div class="nav__logo">
+            <a href="#" class="nav__logo-link">
+              <img
+                class="nav__logo-img"
+                src="./assets/images/LogoD.svg"
+                alt="Denilson Logo"
+              />
+            </a>
+          </div>
+
+          <div class="nav__links" id="navLinks">
+            <a href="#hero" class="nav__link">
+              <span class="nav__link-texto">Sobre mí</span>
+            </a>
+            <a href="#tecnologias" class="nav__link">
+              <span class="nav__link-texto">Habilidades</span>
+            </a>
+            <a href="#proyects" class="nav__link">
+              <span class="nav__link-texto">Proyectos</span>
+            </a>
+          </div>
+
+          <!-- Este queda siempre visible, fuera del menú -->
+          <a href="#contacto" class="link-animation-inverse">
+            <span class="link-animation__text-inverse" data-text="Contactame"
+              >contactame</span
+            >
           </a>
+
+          <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
+            <svg
+              class="nav__toggle-open"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="0" y1="8" x2="24" y2="8" />
+              <line x1="0" y1="16" x2="24" y2="16" />
+            </svg>
+            <svg
+              class="nav__toggle-close"
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+            >
+              <line x1="4" y1="4" x2="20" y2="20" />
+              <line x1="20" y1="4" x2="4" y2="20" />
+            </svg>
+          </button>
         </div>
-
-        <div class="nav__links" id="navLinks">
-          <a href="#hero" class="nav__link">
-            <span class="nav__link-texto">Sobre mí</span>
-          </a>
-          <a href="#tecnologias" class="nav__link">
-            <span class="nav__link-texto">Habilidades</span>
-          </a>
-          <a href="#proyects" class="nav__link">
-            <span class="nav__link-texto">Proyectos</span>
-          </a>
-        </div>
-
-        <!-- Este queda siempre visible, fuera del menú -->
-        <a href="#contacto" class="link-animation-inverse">
-          <span class="link-animation__text-inverse" data-text="Contactame"
-            >contactame</span
-          >
-        </a>
-
-        <button class="nav__toggle" id="navToggle" aria-label="Abrir menú">
-          <svg
-            class="nav__toggle-open"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
-            <line x1="0" y1="8" x2="24" y2="8" />
-            <line x1="0" y1="16" x2="24" y2="16" />
-          </svg>
-          <svg
-            class="nav__toggle-close"
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-          >
-            <line x1="4" y1="4" x2="20" y2="20" />
-            <line x1="20" y1="4" x2="4" y2="20" />
-          </svg>
-        </button>
       </div>
     </nav>
 
-    <!-- * hero ___________________________________________________________________________________________________ -->
-    <header class="header" id="hero">
-      <section class="hero">
-        <h1 class="hero__titulo">
-          <span class="hero__titulo-text">Denilson</span>
-        </h1>
-        <h2 class="hero__sub-titulo">Frontend Developer en formación</h2>
-        <p class="hero__parrafo">
-          Diseño y desarrollo interfaces web responsivas, limpias y funcionales.
-          Actualmente enfocado en dominar las tecnologías frontend para trabajar
-          en proyectos reales.
-        </p>
-      </section>
-
-      <section class="hero__links">
-        <a href="#contacto" class="hero__link link-animation">
-          <span
-            class="hero__link-texto link-animation__text"
-            data-text="Contactame"
-            >contactame</span
-          >
-        </a>
-        <a href="#proyects" class="hero__link link-animation-inverse">
-          <span
-            class="hero__link-texto link-animation__text-inverse"
-            data-text="Proyectos"
-            >proyectos</span
-          >
-        </a>
-      </section>
-    </header>
-
     <!-- * Main ___________________________________________________________________________________________________ -->
     <main class="main">
-      <!--  stats ___________________________________________________________________________________________________ -->
+      <div class="contenedor">
+        <!-- * hero ___________________________________________________________________________________________________ -->
+        <header class="hero" id="hero">
+          <section class="hero__body">
+            <h1 class="hero__titulo">Denilson Martínez</h1>
+            <h2 class="hero__sub-titulo">Frontend Developer en formación</h2>
+            <p class="hero__parrafo">
+              Diseño y desarrollo interfaces web responsivas, limpias y
+              funcionales. Actualmente enfocado en dominar las tecnologías
+              frontend para trabajar en proyectos reales.
+            </p>
+          </section>
 
-      <section class="stats">
-        <div class="stats__fondo-animado">
-          <div class="stats__item"></div>
-        </div>
-        <div class="stats__proyectos stats__card">
-          <span class="stats__numero">3</span>
-          <span class="stats__titulo">Proyectos</span>
-        </div>
+          <section class="hero__footer">
+            <a href="#contacto" class="hero__link link-animation">
+              <span
+                class="hero__link-texto link-animation__text"
+                data-text="Contactame"
+                >contactame</span
+              >
+            </a>
+            <a href="#proyects" class="hero__link link-animation-inverse">
+              <span
+                class="hero__link-texto link-animation__text-inverse"
+                data-text="Proyectos"
+                >proyectos</span
+              >
+            </a>
+          </section>
+        </header>
 
-        <div class="stats__tiempo-aprendizaje stats__card">
-          <span class="stats__numero">6</span>
-          <span class="stats__titulo">Meses aprendiendo</span>
-        </div>
+        <!--  stats ___________________________________________________________________________________________________ -->
 
-        <div class="stats__tecnologias stats__card">
-          <span class="stats__numero">3+</span>
-          <span class="stats__titulo">Tecnologías</span>
-        </div>
-      </section>
-
-      <!-- * skills  ___________________________________________________________________________________________________ -->
-
-      <section class="habilidades" id="tecnologias">
-        <div class="habilidades__titulo separador">
-          <span class="habilidades__titulo--text separador-text"
-            >Tecnologías</span
-          >
-        </div>
-
-        <div class="habilidades__cards">
-          <div class="habilidades__card">
-            <div class="habilidades__card-header">
-              <img
-                src="./assets/images/Html5.svg"
-                alt=""
-                class="habilidades__card-icon"
-              />
-            </div>
-            <div class="habilidades__card-body">
-              <span class="habilidades__card-titulo">HTML5</span>
-              <p class="habilidades__card-description">
-                Estructuración semántica de contenido para páginas web
-                accesibles.
-              </p>
-            </div>
+        <section class="stats">
+          <div class="stats__fondo-animado">
+            <div class="stats__item"></div>
+          </div>
+          <div class="stats__proyectos stats__card">
+            <h2 class="stats__numero">3</h2>
+            <span class="stats__titulo">Proyectos</span>
           </div>
 
-          <div class="habilidades__card">
-            <div class="habilidades__card-header">
-              <img
-                src="./assets/images/Css3.svg"
-                alt=""
-                class="habilidades__card-icon"
-              />
-            </div>
-            <div class="habilidades__card-body">
-              <span class="habilidades__card-titulo">CSS3</span>
-              <p class="habilidades__card-description">
-                Diseño de interfaces modernas con layouts flexibles y
-                responsive.
-              </p>
-            </div>
+          <div class="stats__tiempo-aprendizaje stats__card">
+            <h2 class="stats__numero">6</h2>
+            <span class="stats__titulo">Meses aprendiendo</span>
           </div>
 
-          <div class="habilidades__card">
-            <div class="habilidades__card-header">
-              <img
-                src="./assets/images/Git.svg"
-                alt=""
-                class="habilidades__card-icon"
-              />
-            </div>
-            <div class="habilidades__card-body">
-              <span class="habilidades__card-titulo">Git</span>
-              <p class="habilidades__card-description">
-                Control de versiones para gestionar cambios y colaborar en
-                proyectos.
-              </p>
-            </div>
+          <div class="stats__tecnologias stats__card">
+            <h2 class="stats__numero">3+</h2>
+            <span class="stats__titulo">Tecnologías</span>
+          </div>
+        </section>
+
+        <!-- * skills  ___________________________________________________________________________________________________ -->
+
+        <section class="habilidades" id="tecnologias">
+          <div class="separador">
+            <h2>Tecnologías</h2>
           </div>
 
-          <div class="habilidades__card">
-            <div class="habilidades__card-header">
-              <img
-                src="./assets/images/Responsive.svg"
-                alt=""
-                class="habilidades__card-icon"
-              />
-            </div>
-            <div class="habilidades__card-body">
-              <span class="habilidades__card-titulo">Responsive</span>
-              <p class="habilidades__card-description">
-                Adaptación de interfaces para distintos tamaños de pantalla.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- * proyects ___________________________________________________________________________________________________ -->
-      <section class="proyects" id="proyects">
-        <div class="proyects__titulo separador">
-          <span class="proyects__titulo--text separador-text">Proyectos</span>
-        </div>
-
-        <div class="proyects__cards">
-          <div class="proyects__card">
-            <div class="proyects__card-header">
-              <img
-                src="./assets/images/flex-page1.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-              <img
-                src="./assets/images/flex-page2.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-              <img
-                src="./assets/images/flex-page3.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-            </div>
-            <div class="proyects__card-body">
-              <a href="#" class="proyects__card-link">
-                <p class="proyects__card-description">
-                  <span class="proyects__card-text--under">Landing page</span>
-                  totalmente responsive desarrollada únicamente con Flexbox,
-                  enfocada en una estructura limpia y adaptable a diferentes
-                  dispositivos.
+          <div class="habilidades__cards">
+            <div class="habilidades__card">
+              <div class="habilidades__card-header">
+                <img
+                  src="./assets/images/Html5.svg"
+                  alt="Logo HTML5"
+                  class="habilidades__card-icon"
+                />
+              </div>
+              <div class="habilidades__card-body">
+                <h2 class="habilidades__card-titulo">HTML5</h2>
+                <p class="habilidades__card-description">
+                  Estructuración semántica de contenido para páginas web
+                  accesibles.
                 </p>
-                <span class="proyects__card-titulo"
-                  >Landing Page Responsive</span
-                >
-              </a>
+              </div>
+            </div>
 
-              <div class="proyects__card-skills">
-                <span class="proyect__card-skill">html5</span>
-                <span class="proyect__card-skill">css3</span>
-                <span class="proyect__card-skill">flexbox</span>
-                <span class="proyect__card-skill">github</span>
+            <div class="habilidades__card">
+              <div class="habilidades__card-header">
+                <img
+                  src="./assets/images/Css3.svg"
+                  alt="Logo CSS3"
+                  class="habilidades__card-icon"
+                />
+              </div>
+              <div class="habilidades__card-body">
+                <h2 class="habilidades__card-titulo">CSS3</h2>
+                <p class="habilidades__card-description">
+                  Diseño de interfaces modernas con layouts flexibles y
+                  responsive.
+                </p>
+              </div>
+            </div>
+
+            <div class="habilidades__card">
+              <div class="habilidades__card-header">
+                <img
+                  src="./assets/images/Git.svg"
+                  alt="Logo Git"
+                  class="habilidades__card-icon"
+                />
+              </div>
+              <div class="habilidades__card-body">
+                <h2 class="habilidades__card-titulo">Git</h2>
+                <p class="habilidades__card-description">
+                  Control de versiones para gestionar cambios y colaborar en
+                  proyectos.
+                </p>
+              </div>
+            </div>
+
+            <div class="habilidades__card">
+              <div class="habilidades__card-header">
+                <img
+                  src="./assets/images/Responsive.svg"
+                  alt="Imagen representativa de responsive"
+                  class="habilidades__card-icon"
+                />
+              </div>
+              <div class="habilidades__card-body">
+                <h2 class="habilidades__card-titulo">Responsive</h2>
+                <p class="habilidades__card-description">
+                  Adaptación de interfaces para distintos tamaños de pantalla.
+                </p>
               </div>
             </div>
           </div>
+        </section>
 
-          <div class="proyects__card">
-            <div class="proyects__card-header">
-              <img
-                src="./assets/images/porta-page3.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-              <img
-                src="./assets/images/porta-page1.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-              <img
-                src="./assets/images/porta-page2.png"
-                alt=""
-                class="proyects__card-icon"
-              />
-            </div>
-            <div class="proyects__card-body">
-              <a href="#" class="proyects__card-link">
-                <p class="proyects__card-description">
-                  <span class="proyects__card-text--under"
-                    >Sitio web personal</span
+        <!-- * proyects ___________________________________________________________________________________________________ -->
+        <section class="proyects" id="proyects">
+          <div class="separador">
+            <h2>Proyectos</h2>
+          </div>
+
+          <div class="proyects__cards">
+            <div class="proyects__card">
+              <div class="proyects__card-header">
+                <img
+                  src="./assets/images/flex-page1.png"
+                  alt="Imagen de Flexpage"
+                  class="proyects__card-icon"
+                />
+                <img
+                  src="./assets/images/flex-page2.png"
+                  alt="Imagen de Flexpage"
+                  class="proyects__card-icon"
+                />
+                <img
+                  src="./assets/images/flex-page3.png"
+                  alt="Imagen de Flexpage"
+                  class="proyects__card-icon"
+                />
+              </div>
+              <div class="proyects__card-body">
+                <a
+                  href="https://neid97.github.io/flexproyect/"
+                  target="_blank"
+                  class="proyects__card-link"
+                >
+                  <p class="proyects__card-description">
+                    <span class="proyects__card-text--under">Landing page</span>
+                    totalmente responsive desarrollada únicamente con Flexbox,
+                    enfocada en una estructura limpia y adaptable a diferentes
+                    dispositivos.
+                  </p>
+                  <span class="proyects__card-titulo"
+                    >Landing Page Responsive</span
                   >
-                  diseñado para mostrar proyectos, habilidades y el desarrollo
-                  como frontend, con enfoque en diseño responsive y experiencia
-                  de usuario.
-                </p>
-                <span class="proyects__card-titulo"
-                  >Portafolio Web Personal</span
-                >
-              </a>
+                </a>
 
-              <div class="proyects__card-skills">
-                <span class="proyect__card-skill">html5</span>
-                <span class="proyect__card-skill">css3</span>
-                <span class="proyect__card-skill">flexbox</span>
-                <span class="proyect__card-skill">grid</span>
-                <span class="proyect__card-skill">git</span>
-                <span class="proyect__card-skill">github</span>
+                <div class="proyects__card-skills">
+                  <span class="proyect__card-skill">html5</span>
+                  <span class="proyect__card-skill">css3</span>
+                  <span class="proyect__card-skill">flexbox</span>
+                  <span class="proyect__card-skill">github</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="proyects__card">
+              <div class="proyects__card-header">
+                <img
+                  src="./assets/images/porta-page3.png"
+                  alt="Imagen de Portafolio Denilson"
+                  class="proyects__card-icon"
+                />
+                <img
+                  src="./assets/images/porta-page1.png"
+                  alt="Imagen de Portafolio Denilson"
+                  class="proyects__card-icon"
+                />
+                <img
+                  src="./assets/images/porta-page2.png"
+                  alt="Imagen de Portafolio Denilson"
+                  class="proyects__card-icon"
+                />
+              </div>
+              <div class="proyects__card-body">
+                <a
+                  href="https://neid97.github.io/PortafolioDenilson/"
+                  target="_blank"
+                  class="proyects__card-link"
+                >
+                  <p class="proyects__card-description">
+                    <span class="proyects__card-text--under"
+                      >Sitio web personal</span
+                    >
+                    diseñado para mostrar proyectos, habilidades y el desarrollo
+                    como frontend, con enfoque en diseño responsive y
+                    experiencia de usuario.
+                  </p>
+                  <span class="proyects__card-titulo"
+                    >Portafolio Web Personal</span
+                  >
+                </a>
+
+                <div class="proyects__card-skills">
+                  <span class="proyect__card-skill">html5</span>
+                  <span class="proyect__card-skill">css3</span>
+                  <span class="proyect__card-skill">flexbox</span>
+                  <span class="proyect__card-skill">grid</span>
+                  <span class="proyect__card-skill">git</span>
+                  <span class="proyect__card-skill">github</span>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </section>
+        </section>
+
+        <!-- * Footer ___________________________________________________________________________________________________ -->
+
+        <section class="contacto">
+          <div class="contacto__header">
+            <img
+              src="./assets/images/LogoD.svg"
+              alt="Logo Denilson"
+              class="contacto__img"
+            />
+            <h2>
+              ¿Tienes una idea en mente? Podemos trabajar en ella mientras sigo
+              aprendiendo.
+            </h2>
+            <div class="contacto__header-links">
+              <a
+                href="mailto:martinezdenilson90@gmail.com?subject=Quiero&nbsp;trabajar&nbsp;contigo&body=Hola,&nbsp;vi&nbsp;tu&nbsp;portafolio&nbsp;y..."
+                class="link-animation-inverse contacto__header-link"
+              >
+                <span
+                  class="link-animation__text-inverse contact"
+                  data-text="Contactame"
+                  >contactame</span
+                >
+              </a>
+              <span class="contacto__header-email"
+                >aedenilson991@gmail.com</span
+              >
+            </div>
+          </div>
+          <div class="contacto__body">
+            <div class="contacto__body-content">
+              <span class="contacto__body-text">contacto</span>
+              <a
+                href="https://wa.me/50251858337?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
+                target="_blank"
+                class="contacto__body-quickContact"
+                >WhatsApp</a
+              >
+            </div>
+
+            <div class="contacto__body-content">
+              <span class="contacto__body-text">enlaces</span>
+              <a
+                href="https://github.com/Neid97"
+                target="_blank"
+                class="contacto__body-quickContact"
+                >GitHub</a
+              >
+            </div>
+          </div>
+        </section>
+      </div>
     </main>
 
     <!-- * Footer ___________________________________________________________________________________________________ -->
 
     <footer class="footer" id="contacto">
-      <section class="contacto">
-        <div class="contacto__header">
-          <img
-            src="./assets/images/LogoD.svg"
-            alt="Logo Denilson"
-            class="contacto__img"
-          />
-          <h2>
-            ¿Tienes una idea en mente? Podemos trabajar en ella mientras sigo
-            aprendiendo.
-          </h2>
-          <div class="contacto__header-links">
-            <a
-              href="mailto:martinezdenilson90@gmail.com?subject=Quiero trabajar contigo&body=Hola, vi tu portafolio y..."
-              class="link-animation-inverse contacto__header-link"
-            >
-              <span
-                class="link-animation__text-inverse contact"
-                data-text="Contactame"
-                >contactame</span
-              >
-            </a>
-            <span class="contacto__header-email">aedenilson991@gmail.com</span>
-          </div>
-        </div>
-        <div class="contacto__body">
-          <div class="contacto__body-content">
-            <span class="contacto__body-text">contacto</span>
-            <a
-              href="https://wa.me/50251858337?text=Hola,%20vi%20tu%20portafolio%20y%20me%20gustaría%20hablar%20contigo"
-              target="_blank"
-              class="contacto__body-quickContact"
-              >WhatsApp</a
-            >
-          </div>
-
-          <div class="contacto__body-content">
-            <span class="contacto__body-text">enlaces</span>
-            <a
-              href="https://github.com/Neid97"
-              target="_blank"
-              class="contacto__body-quickContact"
-              >GitHub</a
-            >
-          </div>
-        </div>
-      </section>
-
-      <div class="footer__links">
-        <a href="" class="footer__link">
-          <span class="footer__text-copyright">© 2026 Denilson Martínez</span>
-        </a>
-        <a href="" class="footer__link">
-          <span class="footer__text-link"></span>
-        </a>
+      <div class="contenedor">
+        <span class="footer__text-copyright">© 2026 Denilson Martínez</span>
       </div>
     </footer>
 
     <!-- * script ___________________________________________________________________________________________________ -->
-    <script>
-      const navToggle = document.getElementById("navToggle");
-      const navLinks = document.getElementById("navLinks");
-      const navContacto = document.querySelector('a[href="#contacto"]');
-
-      navToggle.addEventListener("click", () => {
-        navLinks.classList.toggle("is-open");
-        navToggle.classList.toggle("is-open");
-        document.body.classList.toggle("no-scroll");
-      });
-
-      navLinks.addEventListener("click", (e) => {
-        if (e.target.closest("a")) {
-          navLinks.classList.remove("is-open");
-          navToggle.classList.remove("is-open");
-          document.body.classList.remove("no-scroll");
-        }
-      });
-
-      navContacto.addEventListener("click", () => {
-        navLinks.classList.remove("is-open");
-        navToggle.classList.remove("is-open");
-        document.body.classList.remove("no-scroll");
-      });
-    </script>
+    <script src="js/navbar.js"></script>
   </body>
 </html>
-
