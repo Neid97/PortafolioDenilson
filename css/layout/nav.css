@@ -58,6 +58,8 @@ body.no-scroll {
 .nav__links {
     display: flex;
     gap: 1rem;
+    width: 100%;
+    overflow: hidden;
 }
 .nav__link {
     display: inline-flex;
@@ -126,7 +128,7 @@ body.no-scroll {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 2rem;
+        gap: 2rem 0;
         opacity: 0;
         pointer-events: none;
 
